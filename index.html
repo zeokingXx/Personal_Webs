@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZK的小窝</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4797758_nm146ej1hzb.css">
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <nav class="nav">
+    <div class="nav-left">
+      <img src="./images/logo.jpg" alt="个人logo">
+      <p>ZEOKING</p>
+    </div>
+    <div class="nav-right">
+      <ul>
+        <li><i class="iconfont icon-shouye-zhihui"></i><a href="#home">首页</a></li>
+        <li><i class="iconfont icon-gerenzhongxin-zhihui"></i><a href="#about">关于我</a></li>
+        <li><i class="iconfont icon-fenxiang"></i><a href="#works">我的摄影作品</a></li>
+        <li><i class="iconfont icon-bianji"></i><a href="#skills">学习资源站</a></li>
+        <li><i class="iconfont icon-xiaoxi-zhihui"></i><a href="#contact">联系我</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 头部/首页区域 -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>你好，我是ZK</h1>
+      <p class="subtitle">欢迎来到我的小世界！</p>
+      <a href="#contact" class="cta-button">联系我</a>
+    </div>
+  </header>
+
+  <!-- 主体部分 -->
+  <main>
+    <!-- 关于我板块 -->
+    <section id="about" class="profile-section">
+      <h2>关于我</h2>
+      <div class="profile-card">
+        <img src="./images/logo.jpg" alt="个人头像" class="profile-img">
+        <div class="profile-info">
+          <h3>ZK</h3>
+          <p>我是一个热爱编程和摄影的开发者，喜欢探索新技术和分享知识。</p>
+          <ul class="profile-details">
+            <li><strong>年龄:</strong> 20</li>
+            <li><strong>职业:</strong> 前端开发者，跆拳道教练员，网易音乐人，签约摄影师</li>
+            <li><strong>兴趣:</strong> 编程、摄影、旅行</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 摄影作品板块 -->
+    <section id="works" class="gallery-section">
+      <h2>我的摄影作品</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./images/work1.jpg" alt="摄影作品1">
+          <div class="image-overlay">
+            <p>城市摄影</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/work2.jpg" alt="摄影作品2">
+          <div class="image-overlay">
+            <p>自然光人像</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/work3.jpg" alt="摄影作品3">
+          <div class="image-overlay">
+            <p>日落时分</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/work4.jpg" alt="摄影作品4">
+          <div class="image-overlay">
+            <p>蔚蓝海洋</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/work5.jpg" alt="摄影作品5">
+          <div class="image-overlay">
+            <p>山与林</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/work6.jpg" alt="摄影作品6">
+          <div class="image-overlay">
+            <p>魔幻天空</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 学习资源板块 -->
+    <section id="skills" class="upload-section">
+      <h2>学习资源站</h2>
+      <div class="file-list">
+        <a href="./resource/JavaScript初步.md" class="file-item" target="_blank">JavaScript初步.md</a>
+        <a href="./resource/前端 2025.1.1.md" class="file-item" target="_blank">前端知识总结.md</a>
+        <a href="./resource/大前端知识图谱+B站视频整合.pdf" class="file-item" target="_blank">大前端知识图谱+B站视频整合.pdf</a>
+      </div>
+    </section>
+
+    <!-- 联系我板块 -->
+    <section id="contact" class="contact-section">
+      <h2>联系我</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">电子邮件</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">消息</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">发送消息</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="box3">
+          <div class="box4"></div>
+          <div class="box5"></div>
+          <div class="box6"></div>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="social-links">
+          <a href="https://github.com/zeokingXx" target="_blank"><i class="iconfont icon-github"></i>My github</a>
+          <a href="https://blog.csdn.net/2401_89449211?spm=1010.2135.3001.5421" target="_blank"><i class="iconfont icon-blogger"></i>My blog</a>
+          <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank"><i class="iconfont icon-vedio"></i>My video</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="copyright">© 2024 版权所有</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
