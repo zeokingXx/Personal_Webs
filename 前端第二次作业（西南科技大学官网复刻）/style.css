@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    /* 头部样式 */
+    .header {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo {
+            display: flex;
+            margin-right: 300px;
+            span {
+                font-size: 25px;
+                margin-left: 30px;
+                justify-content: center;
+                align-items: center;
+                margin-top: 18px;
+            }
+        }
+        .btn {
+            display: flex;
+            font-size: 14px;
+            margin-top: 40px;
+            a{
+                color: #337AB7;
+                text-decoration: none;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+    /* 主体内容 */
+    .main{
+        width: 100%;
+        /*背景图+登录框属性*/
+        .back{
+            width: 100%;
+            height: 400px;
+            background-image: url(./code/images/back_one.jpg);
+            background-repeat: no-repeat;
+            display: flex;
+            /*登录框属性*/
+            .loginform{
+                width:360px;
+                height:360px;
+                background-color: #fff;
+                margin-left: 900px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /*登录框的标题*/
+                .logintitle{
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    margin-left: 30px;
+                    margin-top: 30px;
+                    align-items:center;
+                    p{
+                        font-size: 18px;
+                    }
+                }
+                /* 输入框 */
+                .logininput{
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    /*用户名框和密码框*/
+                    .loginitem{
+                        width: 300px;
+                        height: 40px;
+                        background-color: #fff;
+                        margin-top: 20px;
+                        input{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    /* 验证码框 */
+                    .captcha{
+                        width: 300px;
+                        height: 35px;
+                        background-color: #fff;
+                        margin-top: 20px;
+                        display: flex;
+                        input{
+                            width: 180px;
+                            height: 100%;
+                        }
+                    }
+                }
+                /* 忘记密码 */
+                .forgetpwd{
+                    width: 100%;
+                    height: 30px;
+                    margin-left: 250px;
+                    a{
+                        color: #5294fd;
+                        text-decoration: none;
+                        font-size: 12px;
+                    }
+                }
+                /* 登录按钮设计 */
+                .logbtn{
+                    width: 300px;
+                    height: 40px;
+                    background-color: #5294fd;
+                    margin-left: 30px;
+                    border: none;
+                    color: #f2f2f2;
+                    button{
+                        width: 100%;
+                        height: 110%;
+                        border: node;
+                        background-color: #5294fd;
+                        color: #f2f2f2;
+                    }
+
+                }
+                /* 其他方式登录 */
+                .other{
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    margin-left: 20px;
+                    align-items: center;
+
+                    p{
+                        font-size: 14px;
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        /*功能框属性*/
+        .features{
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            /*左侧功能框*/
+            .features-left{
+                width: 55%;
+                height: 100%;
+                display: flex;
+                /*左侧功能框每一栏统一设置*/
+                .features-left-item{
+                    margin-top: 60px;
+                    margin-left: 20px;
+                    width: 100%;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    h3{
+                        font-size: 18px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        margin-top: 30px;
+                        color: gray;
+                    }
+                }
+            }
+            /*右侧功能框*/
+            .features-right{
+                width: 45%;
+                height: 100%;
+                display: flex;
+                /*左右功能框分割线*/
+                .l-line{
+                    width: 1px;
+                    height: 100px;
+                    background-color: black;
+                    margin-top: 50px;
+                }
+                /*右侧功能框每一栏统一设置*/
+                .features-right-item{
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 50px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                            margin-right: 10px;
+                        }
+
+                        p{
+                            font-size: 14px;
+                        }  
+                    }
+
+                    h4{
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    /* 底部样式 */
+    .footer {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        background-color: #d8d6d2;
+        .left {
+            display: flex;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            a {
+                color: #337AB7;
+                text-decoration: none;
+                font-size: 12px;
+                margin-right: 10px;
+            }
+        }
+        
+        .center {
+            display: flex;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .right {
+            display: flex;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
